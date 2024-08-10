@@ -1,47 +1,81 @@
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--    Copyright 2014 gokoururi
+        This is based on the 2014 startpage by gokoururi. I am currently cleaning it up, getting rid of all the weird anime bullshit, etc. etc. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome Home</title>
 
-    <title>Astuka Labs</title>
-</head>
+        <link rel="stylesheet" href="general.css"/>
 
-<body>
-    <!--Navbar-->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-            <a class="navbar-brand" href="index.html">Astuka Labs</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="todo.html">Internal TODO</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="resources.html">Resources</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <!-- I now only have dark, so we could probably compress this. Also, get a new icon  -->
+        <!-- <link rel="icon"                           href="themes/ruri-dark/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" /> -->
+        <link rel="stylesheet" href="themes/ruri-dark/colors.css" />
+        <script type="text/javascript">var mascotPath = "themes/ruri-dark/images/mascots/";</script>
+        <script type="text/javascript"              src="themes/ruri-dark/mascots.js"></script>
 
-    
-
-
-
-    <p>This is a GitHub-hosted website to hold some info on my programming projects.</p>
-    <p>Currently planned:</p>
-    <ol>
-        <li>Experiments with react.js, vue.js, rust, <strike>bootstrap</strike> (on this site)</li>
-        <li>Machine learning project - basic NLP</li>
-        <li>Machine learning project - cryptotrader</li>
-        <li><a href="https://github.com/astuka/colony">Colony</a> python simulation game</li>
-        <li>Kubernetes?</li>
-        <li>3D Graphics and game development</li>
-    </ol>
-    <p>I do coding as a hobby, not as my "thing". You can find me on the internet through my <a href="https://jacob-robinson.com/">formal website</a>.</p>
-</body>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/mascots-control.js"></script>
+    </head>
+    <body>
+        <main> 
+            <header>
+                <h1>Website for <span class="name-highlight">Astukari</span></h1>
+                <p class="subtitle">This is based on the 2014 startpage by gokoururi. <br> I am currently cleaning it up <br> It will be under construction for a very, VERY long time.</p>
+            </header>
+            <section class="searchContainer">
+                <form class="searchForm" method="get" action="https://google.com/search">
+                    <input class="searchBar search_google" type="text" name="q" placeholder="Google" autofocus="autofocus" search_/>
+                </form>
+                <form class="searchForm" method="get" action="https://youtube.com/results">
+                    <input class="searchBar search_youtube" type="text" name="search_query" placeholder="Youtube" search_/>
+                </form>
+                <form class="searchForm" method="get" action="https://en.wikipedia.org/w/index.php">
+                    <input class="searchBar search_wikipedia" type="text" name="search" placeholder="Wikipedia (en)" search_/>
+                </form>
+            </section>
+            <nav>
+                <ul class="buttonList">
+                    <li class="button button_green"><a href="https://github.com/astuka">Github</a></li>
+                    <li class="button button_grey"><a href="https://jacob-robinson.com/">Website</a></li>
+                    <li class="button button_grey buttonArrow"><a href="#">Dropdown</a>
+                        <ul>
+                            <li><a href="#">This tests</a></li>
+                            <li><a href="#">the dropdown</a></li>
+                            <li><a href="#">of the</a></li>
+                            <li><a href="#">website.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="columnList">
+                    <li class="column column_purple">
+                        <a>Section 1</a>
+                        <ul>
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="column column_green">
+                        <a>Section 2</a>
+                        <ul>
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                            <li><a href="#">Page 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="column column_pink">
+                        <a>Section 3</a>
+                        <ul>
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                            <li><a href="#">Page 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+    </body>
+</html>
