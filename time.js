@@ -34,5 +34,4 @@ function updateTask() {
 // Run the function to set the initial task
 updateTask();
 
-// Optionally, you can update the task every minute or so
 setInterval(updateTask, 60000); // Update every 60 seconds
